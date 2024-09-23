@@ -77,12 +77,12 @@ const Footer_01 = () => {
           <div className='flex flex-col gap-y-6'>
             <LogoDark />
             <p>
-              Our mission is to harness the power of AI to solve complex
-              business challenges &amp; decision-makers with data-driven
+              Our mission is to harness the power of new technologies to solve
+              complex business challenges &amp; decision-makers with data-driven
               insights, and enhance user experiences across digital platforms.
             </p>
             <p>
-              Website: <Link to='/'>www.example.com</Link>
+              Website: <Link to='/'>www.apnaproject.com</Link>
             </p>
           </div>
           {/* Footer Widget */}
@@ -121,14 +121,6 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/pricing'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                >
-                  pricing
-                </Link>
-              </li>
-              <li>
-                <Link
                   to='/contact'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
                 >
@@ -138,50 +130,7 @@ const Footer_01 = () => {
             </ul>
           </div>
           {/* Footer Widget */}
-          {/* Footer Widget */}
-          <div className='flex flex-col gap-y-6'>
-            {/* Footer Title */}
-            <h4 className='text-[21px] font-semibold capitalize text-black'>
-              Utility pages
-            </h4>
-            {/* Footer Title */}
-            {/* Footer Navbar */}
-            <ul className='flex flex-col gap-y-[10px] capitalize'>
-              <li>
-                <Link
-                  to='/signup'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                >
-                  Signup
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/login'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                >
-                  Login
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/error-404'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                >
-                  404 Not found
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/reset-password'
-                  className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
-                >
-                  Password Reset
-                </Link>
-              </li>
-            </ul>
-          </div>
-          {/* Footer Widget */}
+
           {/* Footer Widget */}
           <div className='flex flex-col gap-y-6'>
             {/* Footer Title */}
@@ -220,8 +169,8 @@ const Footer_01 = () => {
         {/* Footer Bottom */}
         <div className='py-9 text-center'>
           <p>
-            © Copyright {new Date().getFullYear()}, All Rights Reserved by
-            Mthemeus
+            © Copyright {new Date().getFullYear()}, All Rights Reserved by Apna
+            Project
           </p>
         </div>
         {/* Footer Bottom */}
