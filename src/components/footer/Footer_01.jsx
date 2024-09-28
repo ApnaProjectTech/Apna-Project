@@ -1,12 +1,9 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/img/logo-dark.png';
 import LogoDark from '../logo/Logo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer_01 = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <footer className='relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]'>
       {/* Footer Top */}
@@ -67,13 +64,12 @@ const Footer_01 = () => {
           </div>
         </div>
       </div>
-      {/* Footer Text Slider */}
       {/* Footer Top */}
       <div className='global-container'>
         <div className='h-[1px] w-full bg-[#DBD6CF]' />
         {/* Footer Center */}
-        <div className='lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]'>
-          {/* Footer Widget */}
+        <div className='grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto] xl:gap-20 xl:py-[20px]'>
+          {/* Footer Widget 1 */}
           <div className='flex flex-col gap-y-6'>
             <LogoDark />
             <p>
@@ -85,14 +81,12 @@ const Footer_01 = () => {
               Website: <Link to='/'>www.apnaproject.com</Link>
             </p>
           </div>
-          {/* Footer Widget */}
-          {/* Footer Widget */}
+          {/* Footer Widget 2 */}
           <div className='flex flex-col gap-y-6'>
             {/* Footer Title */}
             <h4 className='text-[21px] font-semibold capitalize text-black'>
               Primary Pages
             </h4>
-            {/* Footer Title */}
             {/* Footer Navbar */}
             <ul className='flex flex-col gap-y-[10px] capitalize'>
               <li>
@@ -113,10 +107,10 @@ const Footer_01 = () => {
               </li>
               <li>
                 <Link
-                  to='/services'
+                  to='/projects'
                   className='transition-all duration-300 ease-linear hover:text-colorOrangyRed'
                 >
-                  Services
+                  Our Work
                 </Link>
               </li>
               <li>
@@ -129,40 +123,35 @@ const Footer_01 = () => {
               </li>
             </ul>
           </div>
-          {/* Footer Widget */}
-
-          {/* Footer Widget */}
+          {/* Footer Widget 3 */}
           <div className='flex flex-col gap-y-6'>
-            {/* Footer Title */}
+            {/* Connect with Us Section */}
             <h4 className='text-[21px] font-semibold capitalize text-black'>
-              Subscribe to our newsletter
+              Connect with us through our social media:
             </h4>
-            {/* Footer Title */}
-            {/* Footer Subscriber Form */}
-            <form onSubmit={handleSubmit}>
-              <div className='relative h-[50px] max-w-[300px]'>
-                <input
-                  type='email'
-                  name='newsletter-email'
-                  id='newsletter-email'
-                  placeholder='Enter your email'
-                  className='p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none'
-                  required=''
+            <div className='flex gap-x-4'>
+              <a
+                href='https://www.instagram.com/_apnaproject_/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className='h-8 w-8 text-black'
                 />
-                <button
-                  type='submit'
-                  className='absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500'
-                >
-                  <img
-                    src='assets/img/th-1/arrow-right-large.svg'
-                    alt='newsletter'
-                  />
-                </button>
-              </div>
-            </form>
-            {/* Footer Subscriber Form */}
+              </a>
+              <a
+                href='https://www.linkedin.com/in/apna-project/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className='h-8 w-8 text-black'
+                />
+              </a>
+            </div>
           </div>
-          {/* Footer Widget */}
         </div>
         {/* Footer Center */}
         <div className='h-[1px] w-full bg-[#DBD6CF]' />

@@ -12,26 +12,26 @@ const Contact_Info = () => {
       {/* Section Content Block */}
       <div className='text-lg leading-[1.4] lg:text-[21px]'>
         <p className='mb-7 last:mb-0'>
-          We are here to help you! Tell us how we can help &amp; we'll be in
-          touch with an expert within the next 24 hours.
+          Drop us a message, and let’s grab a cup of Tea (on us). Together,
+          we’ll explore how we can craft the perfect solution for your business.
         </p>
         <ul className='mt-12 flex flex-col gap-y-8 lg:gap-y-12'>
           <li className='flex flex-col gap-y-4 text-2xl font-bold'>
             Send us an email:
             <a
-              href='mailto:info@example.com'
+              href='mailto:contact@apnaproject.com'
               className='text-2xl font-normal leading-loose hover:text-colorOrangyRed lg:text-3xl'
             >
-              info@example.com
+              contact@apnaproject.com
             </a>
           </li>
           <li className='flex flex-col gap-y-4 text-2xl font-bold'>
             Give us a call:
             <a
-              href='tel:+880-1345-922210'
+              href='tel:+918857000254'
               className='text-2xl font-normal leading-loose hover:text-colorOrangyRed lg:text-3xl'
             >
-              +880 1345-922210
+              +91 8857000254
             </a>
           </li>
           <li className='flex flex-col gap-y-4 text-2xl font-bold'>
@@ -41,53 +41,7 @@ const Contact_Info = () => {
                 <Link
                   rel='noopener noreferrer'
                   target='_blank'
-                  to='http://www.facebook.com'
-                  className='group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-colorOrangyRed'
-                >
-                  <img
-                    src='assets/img/th-1/facebook-icon-white.svg'
-                    alt='facebook'
-                    width={14}
-                    height={14}
-                    className='opacity-100 group-hover:opacity-0'
-                  />
-                  <img
-                    src='assets/img/th-1/facebook-icon-black.svg'
-                    alt='facebook'
-                    width={14}
-                    height={14}
-                    className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100'
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  rel='noopener noreferrer'
-                  target='_blank'
-                  to='http://www.twitter.com'
-                  className='group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-colorOrangyRed'
-                >
-                  <img
-                    src='assets/img/th-1/twitter-icon-white.svg'
-                    alt='twitter'
-                    width={14}
-                    height={14}
-                    className='opacity-100 group-hover:opacity-0'
-                  />
-                  <img
-                    src='assets/img/th-1/twitter-icon-black.svg'
-                    alt='twitter'
-                    width={14}
-                    height={14}
-                    className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100'
-                  />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  rel='noopener noreferrer'
-                  target='_blank'
-                  to='http://www.linkedin.com'
+                  to='https://www.linkedin.com/in/apna-project/'
                   className='group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-colorOrangyRed'
                 >
                   <img
@@ -110,7 +64,7 @@ const Contact_Info = () => {
                 <Link
                   rel='noopener noreferrer'
                   target='_blank'
-                  to='http://www.instagram.com'
+                  to='https://www.instagram.com/_apnaproject_/'
                   className='group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-colorOrangyRed'
                 >
                   <img

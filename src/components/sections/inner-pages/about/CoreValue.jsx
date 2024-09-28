@@ -2,7 +2,7 @@ const CoreValue = () => {
   return (
     <section id='core-value'>
       {/* Section Spacer */}
-      <div className='jos mx-5 rounded-[50px] bg-black px-[20px] py-20 sm:px-[50px] md:mx-[50px] lg:px-[100px] xl:py-[130px]'>
+      <div className='jos mx-5 rounded-[50px] bg-black px-[20px] py-20 sm:px-[50px] md:mx-[50px] lg:px-[50px] xl:py-[130px]'>
         {/* Section Container */}
         <div className='global-container'>
           {/* Section Content Block */}
@@ -15,7 +15,7 @@ const CoreValue = () => {
           {/* Horizontal Separator */}
           <div className='mb-6 h-[4px] w-full rounded bg-colorCodGray sm:mb-0' />
           {/* Core Value list */}
-          <ul className='grid grid-cols-1 justify-between gap-6 md:grid-cols-2 xxl:flex xxl:flex-nowrap'>
+          <ul className='grid grid-cols-1 justify-between gap-14 md:grid-cols-2 xxl:flex xxl:flex-nowrap'>
             {/* Core Value Item */}
             <li className='relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-colorOrangyRed after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xxl:hover:after:scale-x-100'>
               <div className='mb-3 flex items-center gap-x-3 md:mb-6'>
@@ -30,7 +30,8 @@ const CoreValue = () => {
                 <h4 className='flex-1 text-white'>Innovation</h4>
               </div>
               <p className='text-lg text-white lg:text-[21px]'>
-                We’re committed to exploring new technologies, and finding
+                We embrace the latest tech to deliver solutions that keep you
+                ahead.
               </p>
             </li>
             {/* Core Value Item */}
@@ -48,7 +49,8 @@ const CoreValue = () => {
                 <h4 className='flex-1 text-white'>Excellence</h4>
               </div>
               <p className='text-lg text-white lg:text-[21px]'>
-                We set high standards for our work &amp; we are dedicated team
+                We hold ourselves to the highest standards, ensuring top-tier
+                results.
               </p>
             </li>
             {/* Core Value Item */}
@@ -66,7 +68,8 @@ const CoreValue = () => {
                 <h4 className='flex-1 text-white'>Collaboration</h4>
               </div>
               <p className='text-lg text-white lg:text-[21px]'>
-                We believe in the power of collaboration, working closely
+                Together, we turn your vision into reality with tailored
+                solutions.
               </p>
             </li>
             {/* Core Value Item */}
@@ -84,7 +87,7 @@ const CoreValue = () => {
                 <h4 className='flex-1 text-white'>Integrity</h4>
               </div>
               <p className='text-lg text-white lg:text-[21px]'>
-                We uphold the highest ethical honesty in all our interactions
+                Honesty and transparency guide us in every step of the process.
               </p>
             </li>
             {/* Core Value Item */}

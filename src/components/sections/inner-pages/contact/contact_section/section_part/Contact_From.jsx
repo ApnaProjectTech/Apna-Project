@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import swal from 'sweetalert';
+import emailjs from '@emailjs/browser'; // Import the EmailJS library
 
-const Contact_From = () => {
+const Contact_Form = () => {
   const [input, setInput] = useState({
     name: '',
     email: '',
@@ -18,20 +19,43 @@ const Contact_From = () => {
     e.preventDefault();
 
     if (
+      input.name === '' ||
       input.email === '' ||
-      input.password === '' ||
       input.phone === '' ||
       input.message === ''
     ) {
-      swal('Opes', 'Please fill required fields', 'error');
+      swal('Oops', 'Please fill in the required fields', 'error');
       return;
     }
+
+    // Use emailjs.sendForm to send the form data
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Service ID from .env
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Template ID from .env
+        e.target, // The form element
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Public key from .env
+      )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          swal('Success!', 'Your message has been sent!', 'success');
+        },
+        (error) => {
+          console.log('FAILED...', error);
+          swal('Oops', 'Something went wrong. Please try again.', 'error');
+        }
+      );
   };
 
   return (
     <div className='order-1 block rounded-lg bg-white px-[30px] py-[50px] shadow-[0_4px_60px_0_rgba(0,0,0,0.1)] md:order-2'>
       {/* Contact Form */}
-      <form onSubmit={handleSubmit} className='flex flex-col gap-y-5'>
+      <form
+        id='contact-form'
+        onSubmit={handleSubmit}
+        className='flex flex-col gap-y-5'
+      >
         {/* Form Group */}
         <div className='grid grid-cols-1 gap-6 xl:grid-cols-2'>
           {/* Form Single Input */}
@@ -48,7 +72,7 @@ const Contact_From = () => {
               value={input.name}
               onChange={handleInput}
               id='contact-name'
-              placeholder='Adam Smith'
+              placeholder='Atul Jha'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
               required=''
             />
@@ -68,7 +92,7 @@ const Contact_From = () => {
               value={input.email}
               onChange={handleInput}
               id='contact-email'
-              placeholder='example@gmail.com'
+              placeholder='contact@apnaproject.com'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
               required=''
             />
@@ -92,7 +116,7 @@ const Contact_From = () => {
               value={input.phone}
               onChange={handleInput}
               id='contact-phone'
-              placeholder='+880-1345-922210'
+              placeholder='+91 8857000254'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
               required=''
             />
@@ -112,9 +136,8 @@ const Contact_From = () => {
               value={input.company}
               onChange={handleInput}
               id='contact-company'
-              placeholder='EX Facebook'
+              placeholder='Apna Project'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
-              required=''
             />
           </div>
           {/* Form Single Input */}
@@ -157,4 +180,4 @@ const Contact_From = () => {
   );
 };
 
-export default Contact_From;
+export default Contact_Form;

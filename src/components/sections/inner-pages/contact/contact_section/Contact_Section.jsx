@@ -5,7 +5,7 @@ const Contact_Section = () => {
   return (
     <section className='contact-section'>
       {/* Section Spacer */}
-      <div className='pb-20 xl:pb-[150px]'>
+      <div className='pb-20 pt-20 xl:pb-[150px]'>
         {/* Section Container */}
         <div className='global-container'>
           <div className='grid grid-cols-1 gap-x-16 gap-y-10 md:grid-cols-2 xl:grid-cols-[minmax(0,_1fr)_1.1fr]'>
@@ -17,6 +17,7 @@ const Contact_Section = () => {
             {/* Contact Right Block */}
           </div>
         </div>
+
         {/* Section Container */}
       </div>
       {/* Section Spacer */}

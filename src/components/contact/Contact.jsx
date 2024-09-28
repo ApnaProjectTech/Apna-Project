@@ -42,16 +42,16 @@ const Contact = () => {
                 </p>
               </div>
               <ul className='mt-10 flex flex-col gap-6 font-dmSans text-[30px] tracking-[1.33] lg:mt-14 lg:gap-y-3 xl:mt-[70px]'>
-                <li className='flex flex-col gap-x-2 leading-tight text-colorOrangyRed lg:flex-row lg:leading-normal'>
+                <li className='flex flex-col gap-x-2 leading-tight text-colorOrangyRed lg:flex-row lg:leading-normal text-2xl'>
                   Email:
                   <a
-                    href='mailto:yourmail@mail.com'
+                    href='mailto:contact@apnaproject.com'
                     className='text-white hover:text-colorOrangyRed'
                   >
                     contact@apnaproject.com
                   </a>
                 </li>
-                <li className='flex flex-col gap-x-2 leading-tight text-colorOrangyRed lg:flex-row lg:leading-normal'>
+                <li className='flex flex-col gap-x-2 leading-tight text-colorOrangyRed lg:flex-row lg:leading-normal text-2xl'>
                   Phone:
                   <a
                     href='tel:+918857000254'

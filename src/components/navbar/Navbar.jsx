@@ -57,15 +57,15 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link to='/about' className='nav-link-item drop-trigger'>
-              Projects
+            <Link to='/projects' className='nav-link-item drop-trigger'>
+              Work
             </Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/about' className='nav-link-item drop-trigger'>
+          {/* <li className='nav-item'>
+            <Link to='/blog' className='nav-link-item drop-trigger'>
               Blogs
             </Link>
-          </li>
+          </li> */}
           <li className='nav-item'>
             <Link to='/contact' className='nav-link-item'>
               Contact

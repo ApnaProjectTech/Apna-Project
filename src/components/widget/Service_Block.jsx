@@ -19,13 +19,9 @@ const Service_Block = ({ icon_black, icon_orange, title, text }) => {
           className='absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100'
         />
       </div>
-      <h3 className='mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]'>
-        <Link to='/service-details' className='hover:text-colorOrangyRed'>
-          {title}
-        </Link>
-      </h3>
+
       <p className='mb-12 duration-300 group-hover:text-white'>{text}</p>
-      <Link
+      {/* <Link
         to='/service-details'
         className='relative inline-block h-[30px] w-[30px] duration-300'
       >
@@ -42,7 +38,7 @@ const Service_Block = ({ icon_black, icon_orange, title, text }) => {
           height={30}
           className='absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100'
         />
-      </Link>
+      </Link> */}
     </li>
   );
 };
