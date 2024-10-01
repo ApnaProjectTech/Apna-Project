@@ -72,7 +72,7 @@ const Contact_Form = () => {
               value={input.name}
               onChange={handleInput}
               id='contact-name'
-              placeholder='Atul Jha'
+              placeholder='Your Fullname'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
               required=''
             />
@@ -92,7 +92,7 @@ const Contact_Form = () => {
               value={input.email}
               onChange={handleInput}
               id='contact-email'
-              placeholder='contact@apnaproject.com'
+              placeholder='yourmail@email.com'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
               required=''
             />
@@ -116,7 +116,7 @@ const Contact_Form = () => {
               value={input.phone}
               onChange={handleInput}
               id='contact-phone'
-              placeholder='+91 8857000254'
+              placeholder='Country code - Number'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
               required=''
             />
@@ -136,7 +136,7 @@ const Contact_Form = () => {
               value={input.company}
               onChange={handleInput}
               id='contact-company'
-              placeholder='Apna Project'
+              placeholder='Your Company'
               className='rounded-[10px] border border-gray-300 bg-white px-6 py-[18px] font-bold text-black outline-none transition-all placeholder:text-slate-500 focus:border-colorOrangyRed'
             />
           </div>
